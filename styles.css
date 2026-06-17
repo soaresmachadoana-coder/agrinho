@@ -1,0 +1,131 @@
+<style>
+        /* Configurações Gerais e Degradê de Fundo */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            /* Degradê linear suave conectando tecnologia (azul) e natureza (verde) */
+            background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+            color: #ffffff;
+            min-height: 100vh;
+            line-height: 1.6;
+        }
+
+        header {
+            /* Degradê destacado para o topo */
+            background: linear-gradient(90deg, #11998e, #38ef7d);
+            padding: 2rem;
+            text-align: center;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            color: #ffffff;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+
+        header p {
+            font-size: 1.1rem;
+            margin-top: 0.5rem;
+            font-weight: 300;
+        }
+
+        main {
+            max-width: 1000px;
+            margin: 2rem auto;
+            padding: 0 1.5rem;
+        }
+
+        /* Seções com fundos translúcidos (efeito Glassmorphism) */
+        section {
+            background: rgba(255, 255, 255, 0.07);
+            border-radius: 15px;
+            padding: 2rem;
+            margin-bottom: 2rem;
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+        }
+
+        h2 {
+            color: #38ef7d;
+            margin-bottom: 1rem;
+            border-bottom: 2px solid rgba(56, 239, 125, 0.3);
+            padding-bottom: 0.5rem;
+        }
+
+        .grid-recursos {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+            margin-top: 1.5rem;
+        }
+
+        .card {
+            background: rgba(0, 0, 0, 0.2);
+            padding: 1.5rem;
+            border-radius: 10px;
+            border-left: 4px solid #11998e;
+            transition: transform 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+        }
+
+        /* Área Interativa da Inteligência Artificial */
+        .ia-simulador {
+            background: linear-gradient(145deg, rgba(32, 58, 67, 0.8), rgba(15, 32, 39, 0.8));
+            padding: 2rem;
+            border-radius: 12px;
+            text-align: center;
+        }
+
+        .btn-analise {
+            background: linear-gradient(90deg, #00c6ff, #0072ff);
+            color: white;
+            border: none;
+            padding: 12px 30px;
+            font-size: 1rem;
+            font-weight: bold;
+            border-radius: 25px;
+            cursor: pointer;
+            margin-top: 1rem;
+            box-shadow: 0 4px 15px rgba(0, 114, 255, 0.4);
+            transition: all 0.3s ease;
+        }
+
+        .btn-analise:hover {
+            opacity: 0.9;
+            box-shadow: 0 6px 20px rgba(0, 114, 255, 0.6);
+            transform: scale(1.02);
+        }
+
+        #resultado-ia {
+            margin-top: 1.5rem;
+            padding: 1rem;
+            border-radius: 8px;
+            font-weight: 500;
+            display: none;
+        }
+
+        footer {
+            text-align: center;
+            padding: 2rem;
+            margin-top: 4rem;
+            background: rgba(0, 0, 0, 0.4);
+            font-size: 0.9rem;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        /* Responsividade */
+        @media (max-width: 768px) {
+            header h1 { font-size: 1.8rem; }
+            section { padding: 1.5rem; }
+        }
+    </style>
